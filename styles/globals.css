@@ -1,0 +1,44 @@
+:root {
+  --background: #f1f1f1;
+  --text: #333;
+}
+[data-theme="dark"] {
+  --background: #333;
+  --text: #f1f1f1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  transition: all 0.5s ease;
+}
+.home {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .theme-toggler {
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  background: var(--text);
+  color: var(--background);
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.home .theme-toggler:active {
+  transform: scale(0.98);
+  transition: none;
+}
